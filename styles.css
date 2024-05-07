@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    background-image: url('background-image.jpg'); /* 画像のURLを適切なものに置き換える */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* コンテンツの背景色を透過させる */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+    background-color: transparent; /* ヘッダーとフッターの背景色を透明に設定 */
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-align: left;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* セクションの背景色を透過させる */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+section:hover {
+    background-color: rgba(240, 240, 240, 0.8); /* セクションのホバー時の背景色を透過させる */
+}
+
+h2 {
+    margin-top: 0;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
