@@ -1,9 +1,11 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f8f8;
-    background-image: url('background-image.jpg'); /* 画像のURLを適切なものに置き換える */
+    background-image: url('background-image.jpg');
+    /* 画像のURLを適切なものに置き換える */
     background-size: cover;
     background-position: center;
 }
@@ -12,13 +14,16 @@ body, html {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* コンテンツの背景色を透過させる */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* コンテンツの背景色を透過させる */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header, footer {
-    background-color: transparent; /* ヘッダーとフッターの背景色を透明に設定 */
+header,
+footer {
+    background-color: transparent;
+    /* ヘッダーとフッターの背景色を透明に設定 */
     color: #333;
     padding: 20px;
     margin-bottom: 20px;
@@ -33,33 +38,37 @@ header h1 {
 section {
     padding: 20px;
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* セクションの背景色を透過させる */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* セクションの背景色を透過させる */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
 section:hover {
-    background-color: rgba(240, 240, 240, 0.8); /* セクションのホバー時の背景色を透過させる */
+    background-color: rgba(240, 240, 240, 0.8);
+    /* セクションのホバー時の背景色を透過させる */
 }
 
 footer p {
     margin: 0;
     text-align: center;
 }
+
 @font-face {
     font-family: 'NxPCui';
     src: url('font/NxPCui.woff') format('woff');
-  }
-  
-  p{
-    font-family: NxPCui;
-  }
+}
 
-  h1{
+p {
     font-family: NxPCui;
-  }
-  h2 {
+}
+
+h1 {
+    font-family: NxPCui;
+}
+
+h2 {
     margin-top: 0;
     font-family: NxPCui;
 }
