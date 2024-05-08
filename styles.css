@@ -43,11 +43,23 @@ section:hover {
     background-color: rgba(240, 240, 240, 0.8); /* セクションのホバー時の背景色を透過させる */
 }
 
-h2 {
-    margin-top: 0;
-}
-
 footer p {
     margin: 0;
     text-align: center;
+}
+@font-face {
+    font-family: 'NxPCui';
+    src: url('font/NxPCui.woff') format('woff');
+  }
+  
+  p{
+    font-family: NxPCui;
+  }
+
+  h1{
+    font-family: NxPCui;
+  }
+  h2 {
+    margin-top: 0;
+    font-family: NxPCui;
 }
