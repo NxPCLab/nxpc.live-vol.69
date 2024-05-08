@@ -40,3 +40,27 @@
 </body>
 
 </html>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<script>
+// クリック時に音を再生する関数
+function playClickSound() {
+    // 新しいAudioオブジェクトを作成し、音声ファイルを読み込む
+    var audio = new Audio('click-sound.mp3');
+    // 音声を再生する
+    audio.play();
+}
+
+// ドキュメント全体に対して、クリック時にplayClickSound関数を呼び出すイベントリスナーを追加する
+document.addEventListener('click', playClickSound);
+</script>
+
+</body>
+</html>
