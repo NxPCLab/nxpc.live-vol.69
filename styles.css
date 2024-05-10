@@ -63,6 +63,7 @@ footer p {
 
 p {
     font-family: NxPCui;
+    font-size: 1.5em;
 }
 
 h1 {
@@ -72,4 +73,5 @@ h1 {
 h2 {
     margin-top: 0;
     font-family: NxPCui;
+    font-size: 3em;
 }
