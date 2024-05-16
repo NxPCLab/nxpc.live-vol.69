@@ -460,3 +460,22 @@ body {
   letter-spacing: 0;
   line-height: normal;
 }
+
+@media screen and (max-width: 600px) {
+  /* スマートフォン用のスタイルをここに記述 */
+
+  .box {
+    width: 100%; /* ボックスを画面幅いっぱいに広げる */
+    height: auto; /* 高さは自動調整 */
+  }
+
+  .box .nxpc-live-vol-LP,
+  .box .overlap,
+  .box .body {
+    width: 100%; /* 各要素を画面幅いっぱいに広げる */
+    height: auto; /* 高さは自動調整 */
+    position: static; /* positionをstaticに戻す */
+  }
+
+  /* 他の要素のスタイルも同様に調整 */
+}
