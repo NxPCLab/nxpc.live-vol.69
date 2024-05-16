@@ -472,7 +472,7 @@ body {
   .box .nxpc-live-vol-LP,
   .box .overlap,
   .box .body {
-    width: 100%; /* 各要素を画面幅いっぱいに広げる */
+    width: 80%; /* 各要素を画面幅いっぱいに広げる */
     height: auto; /* 高さは自動調整 */
     position: static; /* positionをstaticに戻す */
   }
