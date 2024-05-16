@@ -461,9 +461,8 @@ body {
   line-height: normal;
 }
 
-@media screen and (max-width: 600px) {
-  /* スマートフォン用のスタイルをここに記述 */
-
+@media screen and (max-width: 480px) {
+  /* スマートフォン用のスタイル */
   .box {
     width: 80%; /* ボックスを画面幅いっぱいに広げる */
     height: auto; /* 高さは自動調整 */
