@@ -110,19 +110,18 @@
 
 <html lang="ja">
 <script>
+  //音声再生の実装
   document.addEventListener('DOMContentLoaded', function () {
-    // クリック時に音を再生する関数
     function playClickSound() {
-      // 新しいAudioオブジェクトを作成し、音声ファイルを読み込む
       var audio = new Audio('sounds/click-sound.mp3');
-      // 音声を再生する
+      //音声を再生する
       audio.play();
     }
-    // ドキュメント全体に対して、クリック時にplayClickSound関数を呼び出すイベントリスナーを追加する
+    //ドキュメント全体に対して、クリック時にplayClickSound関数を呼び出すイベントリスナーを追加する
     document.addEventListener('click', playClickSound);
   });
 
-  // ページ内ショートカットの実装
+  //ページ内ショートカットの実装
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
