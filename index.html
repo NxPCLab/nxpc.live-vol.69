@@ -116,7 +116,7 @@
           </div>
           <div class="upcoming-event">
             <div class="div-wrapper">
-              <div class="text-wrapper-5">Upcoming Event</div>
+              <!-- <div class="text-wrapper-5">Upcoming Event</div> -->
             </div>
           </div>
         </div>
@@ -223,30 +223,6 @@
       }
     });
   });
-
-  // Google Mapsの初期化
-  function initMap() {
-    const geocoder = new google.maps.Geocoder();
-    const address = '〒503-0006 岐阜県大垣市加賀野４丁目１−７ 情報科学芸術大学院大学センタービル3階';
-
-    geocoder.geocode({ 'address': address }, function (results, status) {
-      if (status === 'OK') {
-        const mapOptions = {
-          center: results[0].geometry.location,
-          zoom: 15
-        };
-        const map = new google.maps.Map(document.getElementById('map'), mapOptions);
-        const marker = new google.maps.Marker({
-          position: results[0].geometry.location,
-          map: map,
-          title: address
-        });
-      } else {
-        alert('Geocode was not successful for the following reason: ' + status);
-      }
-    });
-  }
-
 </script>
 
 </html>
