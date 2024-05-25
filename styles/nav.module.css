@@ -1,0 +1,50 @@
+.list {
+    display: flex;
+    gap: 2em;
+}
+
+@media (max-width: 800px) {
+    .list {
+        gap: 1.5em;
+    }
+}
+
+.link {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-left: 0px;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 600px) {
+    .link {
+        font-size: 10px;
+        letter-spacing: 0.0em;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: inherit;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    .link {
+        font-size: calc(10px + 1vw);
+        letter-spacing: 0.05em;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: inherit;
+    }
+}
+
+@media (min-width: 1001px) {
+    .link {
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: inherit;
+    }
+}

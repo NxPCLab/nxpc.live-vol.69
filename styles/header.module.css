@@ -1,0 +1,16 @@
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* ヘッダーが他の要素よりも手前に表示されるようにする */
+    background-color: white;
+    /* 必要に応じて背景色を設定 */
+    border-bottom: solid;
+    border-color: grey;
+}
