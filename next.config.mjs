@@ -4,6 +4,10 @@ const nextConfig = {
   images: {
     domains: ['images.microcms-assets.io'],
   },
+  trailingSlash: true,
+  output: {
+    export: true,
+  }
 };
 
 export default nextConfig;

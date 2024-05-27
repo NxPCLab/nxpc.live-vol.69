@@ -6,10 +6,13 @@ import About from 'components/about'
 import Information from 'components/infomation'
 import TimeTable from 'components/timeTable'
 import Performer from 'components/performer'
+import Meta from 'components/meta'
 
 export default function Layout() {
     return (
         <>
+            <Meta />
+
             <Header />
 
             <main>

@@ -1,35 +1,28 @@
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { siteMeta } from 'lib/constants'
 const { siteTitle, siteDesc, siteUrl, siteLocale, siteType, siteIcon } = siteMeta
 
-import siteImg from 'images/ogp.jpg'
+import siteImg from 'images/mainVisual.png'
 
-export default function Meta({ pageTitle, pageDesc, pageImg, pageImgW, pageImgH }) {
-    const title = pageTitle ? `${pageTitle} | ${siteTitle}` : siteTitle
-    const desc = pageDesc ?? siteDesc
-    const router = useRouter()
-    const url = `${siteUrl}${router.asPath}`
-
-    // OGP画像
-    const img = pageImg || siteImg.src
-    const imgW = pageImgW || siteImg.width
-    const imgH = pageImgH || siteImg.height
-    const imgUrl = img.startsWith('https') ? img : `${siteUrl}${img}`
+export default function Meta() {
+    const img = siteImg.src
+    const imgW = siteImg.width
+    const imgH = siteImg.height
+    const imgUrl = siteUrl
 
     return (
         <Head>
-            <title>{title}</title>
-            <meta property='og:title' content={`${title} | ${siteTitle}`} />
+            <title>{siteTitle}</title>
+            <meta property='og:title' content={siteTitle} />
 
-            <meta name="description" content={desc} />
-            <meta property="og:description" content={desc} />
+            <meta name="description" content={siteDesc} />
+            <meta property="og:description" content={siteDesc} />
 
-            <link rel="canonical" href={url} />
-            <meta property="og:url" content={url} />
+            <link rel="canonical" href={siteUrl} />
+            <meta property="og:url" content={siteUrl} />
 
             <meta property="og:site_name" content={siteTitle} />
-            <meta property="og:type" content={siteTitle} />
+            <meta property="og:type" content={siteType} />
             <meta property="og:locale" content={siteLocale} />
 
             <link rel="icon" href={siteIcon} />

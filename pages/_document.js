@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from "next/document";
-
 import { siteMeta } from 'lib/constants'
 const { siteLang } = siteMeta
 
