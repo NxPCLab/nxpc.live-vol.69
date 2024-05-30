@@ -75,7 +75,7 @@ a {
     width: 10vw;
     height: auto;
     max-width: 88px;
-    min-width: 50px
+    min-width: 40px
 }
 
 .logo_logoText__Q_Jdp {
@@ -84,9 +84,9 @@ a {
     margin-left: 10px
 }
 
-@media (min-width:600px) {
+@media (min-width:400px) {
     .logo_logoImage__E8kKb {
-        width: calc(50px + (28 * ((100vw - 600px) / 400)))
+        width: calc(40px + (28 * ((100vw - 400px) / 200)))
     }
 
     .logo_logoText__Q_Jdp {
@@ -96,52 +96,24 @@ a {
 
 .nav_list__weADX {
     display: flex;
-    gap: 2em
+    gap: 0.8em
 }
 
-@media (max-width:800px) {
+@media (min-width:600px) {
     .nav_list__weADX {
-        gap: 1.5em
+        gap: calc(0.8em + (10 * (100vw - 600px) / 400))
     }
 }
 
 .nav_link__sDduO {
-    font-size: 3vw;
-    font-weight: 700;
-    margin-left: 0;
-    letter-spacing: .05em
+    font-size: 10px;
+    font-weight: bold;
 }
 
-@media (max-width:600px) {
+@media (min-width:600px) {
     .nav_link__sDduO {
-        font-size: 8px;
-        letter-spacing: 0;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        color: inherit
-    }
-}
-
-@media (min-width:601px) and (max-width:1000px) {
-    .nav_link__sDduO {
-        font-size: calc(10px + 1vw);
-        letter-spacing: .05em;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        color: inherit
-    }
-}
-
-@media (min-width:1001px) {
-    .nav_link__sDduO {
-        font-size: 20px;
-        letter-spacing: .1em;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        color: inherit
+        font-size: calc(10px + (5 * (100vw - 600px) / 400));
+        font-weight: bold;
     }
 }
 
@@ -260,13 +232,6 @@ section {
     width: 100%
 }
 
-/* .aboutSpace {
-    border: solid;
-    height: 100px;
-    position: relative;
-    z-index: 1;
-} */
-
 .hero_text__oiOd3 {
     padding-top: calc(var(--display) * .5);
     padding-bottom: calc(var(--display) * .7)
@@ -356,19 +321,19 @@ section {
 
 .infoCenter_dateTime__NUcpH,
 .infoCenter_place__1B9PO {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700
 }
 
 .infoCenter_address__u_qIG,
 .infoCenter_time__MlUbs {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 20px
 }
 
 .infoCenter_rectangleContainer__QOJ69 {
-    width: 380px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     position: relative;
     margin-top: 10px;
 }
@@ -391,7 +356,7 @@ section {
     .infoCenter_dateTime__NUcpH,
     .infoCenter_place__1B9PO,
     .infoCenter_time__MlUbs {
-        font-size: calc(20px + (5 * (100vw - 600px) / 400))
+        font-size: calc(15px + (4 * (100vw - 600px) / 400))
     }
 
     .infoCenter_rectangleContainer__QOJ69 {
@@ -419,7 +384,7 @@ section {
     padding: 0 10px;
 }
 
-.timeTable_box__o6MQU .timeTable_timetable__RtIV_ {
+.timeTable_timetable__RtIV_ {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -428,7 +393,7 @@ section {
     padding: 30px;
 }
 
-.timeTable_box__o6MQU .timeTable_schedule__43ZM3 {
+.timeTable_schedule__43ZM3 {
     width: 100%;
     margin: 20px 0;
     display: flex;
@@ -436,17 +401,17 @@ section {
     align-items: flex-start
 }
 
-.timeTable_box__o6MQU .timeTable_line__sXaZY {
+.timeTable_line__sXaZY {
     width: 100%;
     border: none;
     border-top: 1px solid #000
 }
 
-.timeTable_box__o6MQU .timeTable_textWrapper__Iip9E {
+.timeTable_textWrapper__Iip9E {
     width: 100%;
     font-weight: 400;
     color: #000;
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 0;
     line-height: normal;
     text-align: left;
@@ -455,13 +420,43 @@ section {
     text-overflow: ellipsis
 }
 
-@media (min-width:600px) {
+.empLong_wrapper {
+    display: flex;
+}
+
+.timeTable_textWrapper__emp {
+    font-weight: 400;
+    color: #FFF;
+    font-size: 12px;
+    border: solid;
+}
+
+.timeTable_textWrapper__long {
+    width: 100%;
+    font-weight: 400;
+    color: #000;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media (min-width:400px) {
     .timeTable_div__9A0mB {
-        font-size: calc(32px + (10 * (100vw - 600px) / 400))
+        font-size: calc(32px + (10 * (100vw - 400px) / 400))
     }
 
-    .timeTable_box__o6MQU .timeTable_textWrapper__Iip9E {
-        font-size: calc(16px + (3 * (100vw - 600px) / 400))
+    .timeTable_box__o6MQU,
+    .timeTable_textWrapper__Iip9E,
+    .timeTable_textWrapper__emp {
+        font-size: calc(12px + (3 * (100vw - 400px) / 400))
+    }
+
+    .timeTable_textWrapper__long {
+        font-size: calc(8px + (6 * (100vw - 400px) / 400))
     }
 }
 
@@ -490,9 +485,17 @@ section {
     grid-column: span 5
 }
 
-.performer_text__dxPWF {
+.performer_name {
     font-size: 14px;
-    text-align: center
+    font-weight: bold;
+    text-align: center;
+}
+
+.performer_text {
+    font-size: 10px;
+    color: rgb(79, 78, 78);
+    text-align: left;
+    margin-top: 5px;
 }
 
 @media (min-width:600px) {
@@ -508,8 +511,12 @@ section {
         margin: 0
     }
 
-    .performer_text__dxPWF {
-        font-size: calc(14px + (4 * (100vw - 600px) / 400))
+    .performer_name {
+        font-size: calc(14px + (4 * (100vw - 600px) / 400));
+    }
+
+    .performer_text {
+        font-size: calc(10px + (2 * (100vw - 600px) / 400));
     }
 }
 
@@ -531,6 +538,8 @@ section {
         height: auto
     }
 }
+
+
 
 :host,
 :root {
@@ -1125,35 +1134,3 @@ svg:not(:root).svg-inline--fa {
 .fad.fa-inverse {
     color: var(--fa-inverse, #fff)
 }
-
-
-
-
-
-/* .performers_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.performer {
-    margin: 10px 0;
-}
-
-.performer_imageWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.performer_imageWrapper img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.performer_text {
-    margin-top: 10px;
-    text-align: center;
-} */
