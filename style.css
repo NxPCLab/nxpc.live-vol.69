@@ -96,6 +96,7 @@ a {
 }
 
 .nav_list__weADX {
+    margin-right: 0.8em;
     display: flex;
     gap: 0.8em
 }
@@ -140,8 +141,8 @@ section {
 }
 
 .container_default__B4m_l {
-    width: 92%;
-    max-width: 1600px;
+    width: 100%;
+    max-width: 1800px;
     margin: 0 auto
 }
 
@@ -253,7 +254,6 @@ section {
 .timeTableSpace,
 .performerSpace {
     height: 55px;
-    /* border: solid; */
 }
 
 .spaceBuffer {
@@ -270,7 +270,6 @@ section {
     }
 }
 
-/* General styling for about section */
 .about_title {
     font-size: 32px;
     font-weight: 700;
@@ -424,7 +423,7 @@ section {
 .empLong_wrapper {
     display: flex;
     align-items: center;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .timeTable_textWrapper__emp {
@@ -437,7 +436,7 @@ section {
     width: 100%;
     font-weight: 400;
     color: #000;
-    font-size: 8px;
+    font-size: 8.2px;
     letter-spacing: 0;
     line-height: normal;
     text-align: left;
@@ -462,7 +461,7 @@ section {
     }
 
     .timeTable_textWrapper__long {
-        font-size: calc(8px + (6 * (100vw - 400px) / 400))
+        font-size: calc(8.2px + (6 * (100vw - 400px) / 400))
     }
 }
 
@@ -504,6 +503,13 @@ section {
     margin-top: 5px;
 }
 
+.performer_text_guest {
+    font-size: 10px;
+    color: rgb(79, 78, 78);
+    text-align: center;
+    margin-top: 5px;
+}
+
 @media (min-width:600px) {
     .performer_container__R0kxb {
         grid-template-columns: repeat(5, 1fr)
@@ -521,7 +527,8 @@ section {
         font-size: calc(14px + (4 * (100vw - 600px) / 400));
     }
 
-    .performer_text {
+    .performer_text,
+    .performer_text_guest {
         font-size: calc(10px + (2 * (100vw - 600px) / 400));
     }
 }
