@@ -256,6 +256,10 @@ section {
     /* border: solid; */
 }
 
+.spaceBuffer {
+    height: 5px;
+}
+
 @media (min-width:600px) {
 
     .aboutSpace,
@@ -275,14 +279,14 @@ section {
 }
 
 .about_text {
-    font-size: 8px;
+    font-size: 9.5px;
     text-align: center;
     align-items: center;
 }
 
 @media (min-width: 375px) {
     .about_text {
-        font-size: calc(8px + (5 * (100vw - 375px) / 400));
+        font-size: calc(9.5px + (5 * (100vw - 375px) / 400));
     }
 }
 
