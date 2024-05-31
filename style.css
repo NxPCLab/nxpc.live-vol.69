@@ -250,13 +250,13 @@ section {
 }
 
 #about {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 50px;
 }
 
 #info,
 #timetable,
 #performer {
-    scroll-margin-top: 5ps;
+    scroll-margin-top: 20px;
 }
 
 .aboutSpace {
