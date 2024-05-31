@@ -75,7 +75,7 @@ a {
     width: 10vw;
     height: auto;
     max-width: 88px;
-    min-width: 35px
+    min-width: 30px
 }
 
 .logo_logoText__Q_Jdp {
@@ -87,7 +87,7 @@ a {
 
 @media (min-width:400px) {
     .logo_logoImage__E8kKb {
-        width: calc(35px + (28 * ((100vw - 400px) / 200)))
+        width: calc(30px + (28 * ((100vw - 400px) / 200)))
     }
 
     .logo_logoText__Q_Jdp {
@@ -249,7 +249,20 @@ section {
     font-size: var(--small-heading2)
 }
 
-.aboutSpace,
+#about {
+    scroll-margin-top: 40px;
+}
+
+#info,
+#timetable,
+#performer {
+    scroll-margin-top: 5ps;
+}
+
+.aboutSpace {
+    height: 20px;
+}
+
 .infoSpace,
 .timeTableSpace,
 .performerSpace {
@@ -257,12 +270,21 @@ section {
 }
 
 .spaceBuffer {
-    height: 5px;
+    height: 0px;
+}
+
+@media (max-width: 400px) {
+    .spaceBuffer {
+        height: 10px;
+    }
 }
 
 @media (min-width:600px) {
 
-    .aboutSpace,
+    .aboutSpace {
+        height: calc(20px + (14 * ((100vw - 600px) / 400)))
+    }
+
     .infoSpace,
     .timeTableSpace,
     .performerSpace {
