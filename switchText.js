@@ -3,7 +3,27 @@ function adjustLayout() {
     var aboutText = document.querySelector('.about_text');
     var aboutSection = document.querySelector('.about_section');
 
-    if (width <= 660) {
+    if (width <= 570) {
+        aboutText.innerHTML = `
+            NxPC.Labは、クラブやライブにおける<br />アーティストと観客の<br />
+            相互作用によってもたらされる場の臨場感を<br />
+            拡大し、ネットへも拡散させるための</br>
+            メディアテクノロジーの実現を目指した<br />
+            研究機関です。<br /><br />
+            現代のディア体験において必要とされる<br />
+            対話性と参加性を</br>
+            デバイス、インタフェース、ネットワーク<br />
+            といったメディアテクノロジーを<br />
+            駆使することで、音楽体験を拡張し、</br>
+            音楽空間におけるコミュニケーションを<br />
+            次のステージへ導くための<br />
+            研究開発、イベントを実施しています。<br /><br />
+            実験の場としてのイベントNxPC.Liveを中心に、<br />
+            レクチャーやワークショップ、ネットラジオ<br />
+            などの活動を行っています。`;
+        aboutSection.style.textAlign = 'center';
+    }
+    else if (width <= 1050) {
         aboutText.innerHTML = `
             NxPC.Labは、クラブやライブにおけるアーティストと観客の相互作用によって</br>
             もたらされる場の臨場感を拡大し、ネットへも拡散させるための</br>
