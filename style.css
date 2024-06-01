@@ -550,7 +550,7 @@ section {
     }
 
     .performer_text,
-    .performer_text_guest {
+    .performer_text_center {
         font-size: calc(10px + (2 * (100vw - 600px) / 400));
     }
 }
