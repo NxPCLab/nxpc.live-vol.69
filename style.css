@@ -18,7 +18,7 @@
     --space-md: calc(var(--space-xs) * 2);
     --space-lg: calc(var(--space-xs) * 3);
     --space-xl: calc(var(--space-xs) * 4);
-    --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem)
+    --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem);
 }
 
 body {
@@ -307,13 +307,15 @@ section {
 
 @media (min-width: 600px) {
     .about_text {
-        font-size: calc(15px + (4 * (100vw - 600px) / 400));
+        /* font-size: calc(15px + (4 * (100vw - 600px) / 400)); */
+        font-size: 15px;
     }
 }
 
 @media (min-width:600px) {
     .about_title {
-        font-size: calc(32px + (10 * (100vw - 600px) / 400));
+        /* font-size: calc(32px + (10 * (100vw - 600px) / 400)); */
+        font-size: 32px;
     }
 }
 
@@ -370,14 +372,16 @@ section {
 
 @media (min-width:600px) {
     .infoCenter_title__bCHtb {
-        font-size: calc(32px + (10 * (100vw - 600px) / 400));
+        /* font-size: calc(32px + (10 * (100vw - 600px) / 400)); */
+        font-size: 32px;
     }
 
     .infoCenter_address__u_qIG,
     .infoCenter_dateTime__NUcpH,
     .infoCenter_place__1B9PO,
     .infoCenter_time__MlUbs {
-        font-size: calc(15px + (4 * (100vw - 600px) / 400));
+        /* font-size: calc(15px + (4 * (100vw - 600px) / 400)); */
+        font-size: 15px;
     }
 
     .infoCenter_rectangleContainer__QOJ69 {
@@ -469,7 +473,8 @@ section {
 
 @media (min-width:400px) {
     .timeTable_div__9A0mB {
-        font-size: calc(32px + (10 * (100vw - 400px) / 400))
+        /* font-size: calc(32px + (10 * (100vw - 400px) / 400)); */
+        font-size: 32px;
     }
 
 
@@ -479,11 +484,13 @@ section {
 
     .timeTable_textWrapper__Iip9E,
     .timeTable_textWrapper__emp {
-        font-size: calc(12px + (6.5 * (100vw - 400px) / 400))
+        /* font-size: calc(12px + (6.5 * (100vw - 400px) / 400)); */
+        font-size: 12px;
     }
 
     .timeTable_textWrapper__long {
-        font-size: calc(8.2px + (6 * (100vw - 400px) / 400))
+        /* font-size: calc(8.2px + (6 * (100vw - 400px) / 400)); */
+        font-size: 8.2px;
     }
 }
 
@@ -538,7 +545,8 @@ section {
     }
 
     .performer_title__MPcAo {
-        font-size: calc(32px + (10 * (100vw - 600px) / 400))
+        /* font-size: calc(32px + (10 * (100vw - 600px) / 400)); */
+        font-size: 32px;
     }
 
     .performer_imageWrapper___idk2 {
@@ -546,12 +554,14 @@ section {
     }
 
     .performer_name {
-        font-size: calc(14px + (4 * (100vw - 600px) / 400));
+        /* font-size: calc(14px + (4 * (100vw - 600px) / 400)); */
+        font-size: 14px;
     }
 
     .performer_text,
     .performer_text_center {
-        font-size: calc(10px + (2 * (100vw - 600px) / 400));
+        /* font-size: calc(10px + (2 * (100vw - 600px) / 400)); */
+        font-size: 10px;
     }
 }
 
