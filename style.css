@@ -352,6 +352,7 @@ section {
 
 .infoImg {
     max-width: 20%;
+    min-width: 240px;
     height: auto;
     display: block;
     margin-top: 10px;
