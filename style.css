@@ -311,8 +311,8 @@ section {
 
 .about_text {
     font-size: 15px;
+    align-items: left;
     text-align: center;
-    align-items: center;
 }
 
 @media (min-width: 600px) {
@@ -536,7 +536,7 @@ section {
 .performer_name {
     font-size: 14px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 .performer_text {
