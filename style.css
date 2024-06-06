@@ -18,7 +18,7 @@
     --space-md: calc(var(--space-xs) * 2);
     --space-lg: calc(var(--space-xs) * 3);
     --space-xl: calc(var(--space-xs) * 4);
-    --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem);
+    --space-jump: clamp(1.25rem, 0.35rem + 3.8vw, 3.75rem)
 }
 
 body {
@@ -231,7 +231,13 @@ section {
 }
 
 .hero_image__D3tIB {
-    width: 100%
+    width: 80%
+}
+
+@media(max-width: 600px) {
+    .hero_image__D3tIB {
+        width: 100%;
+    }
 }
 
 .hero_text__oiOd3 {
@@ -307,15 +313,13 @@ section {
 
 @media (min-width: 600px) {
     .about_text {
-        /* font-size: calc(15px + (4 * (100vw - 600px) / 400)); */
-        font-size: 15px;
+        font-size: calc(15px + (1.5 * (100vw - 600px) / 400));
     }
 }
 
 @media (min-width:600px) {
     .about_title {
-        /* font-size: calc(32px + (10 * (100vw - 600px) / 400)); */
-        font-size: 32px;
+        font-size: calc(18px + (5 * (100vw - 600px) / 400));
     }
 }
 
@@ -342,14 +346,21 @@ section {
     text-align: center;
 }
 
-.infoCenter_dateTime__NUcpH,
-.infoCenter_place__1B9PO {
-    font-size: 15px;
-    font-weight: 700;
+.infoImg {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.infoCenter_address__u_qIG,
-.infoCenter_time__MlUbs {
+@media(max-width: 400px) {
+    .infoImg {
+        max-width: 60%;
+    }
+}
+
+.infoCenter_address__u_qIG {
     font-size: 15px;
     margin-bottom: 20px;
 }
@@ -372,16 +383,11 @@ section {
 
 @media (min-width:600px) {
     .infoCenter_title__bCHtb {
-        /* font-size: calc(32px + (10 * (100vw - 600px) / 400)); */
-        font-size: 32px;
+        font-size: calc(18px + (5 * (100vw - 600px) / 400));
     }
 
-    .infoCenter_address__u_qIG,
-    .infoCenter_dateTime__NUcpH,
-    .infoCenter_place__1B9PO,
-    .infoCenter_time__MlUbs {
-        /* font-size: calc(15px + (4 * (100vw - 600px) / 400)); */
-        font-size: 15px;
+    .infoCenter_address__u_qIG {
+        font-size: calc(15px + (10 * (100vw - 600px) / 400));
     }
 
     .infoCenter_rectangleContainer__QOJ69 {
@@ -402,12 +408,18 @@ section {
 }
 
 .timeTable_box__o6MQU {
-    width: 100%;
-    max-width: 1120px;
+    width: 350px;
+    max-width: 900px;
     background-color: #fff;
-    box-shadow: 0 4px 20px #00000040;
+    box-shadow: 0 4px 10px #00000040;
     margin: 0 auto;
     padding: 0 5px;
+}
+
+@media(min-width: 350px) {
+    .timeTable_box__o6MQU {
+        width: calc(350px + (250 * (100vw - 350px) / 650))
+    }
 }
 
 .timeTable_timetable__RtIV_ {
@@ -473,8 +485,7 @@ section {
 
 @media (min-width:400px) {
     .timeTable_div__9A0mB {
-        /* font-size: calc(32px + (10 * (100vw - 400px) / 400)); */
-        font-size: 32px;
+        font-size: calc(18px + (5 * (100vw - 600px) / 400));
     }
 
 
@@ -484,13 +495,11 @@ section {
 
     .timeTable_textWrapper__Iip9E,
     .timeTable_textWrapper__emp {
-        /* font-size: calc(12px + (6.5 * (100vw - 400px) / 400)); */
-        font-size: 12px;
+        font-size: calc(15px + (1.5 * (100vw - 600px) / 400));
     }
 
     .timeTable_textWrapper__long {
-        /* font-size: calc(8.2px + (6 * (100vw - 400px) / 400)); */
-        font-size: 8.2px;
+        font-size: calc(8.2px + (3.5 * (100vw - 400px) / 400))
     }
 }
 
@@ -503,11 +512,11 @@ section {
 }
 
 .performer_imageWrapper___idk2 {
-    width: 80%
+    width: 70%
 }
 
 .performer_image__8x4hR {
-    width: 80%;
+    width: 70%;
     height: auto
 }
 
@@ -545,8 +554,7 @@ section {
     }
 
     .performer_title__MPcAo {
-        /* font-size: calc(32px + (10 * (100vw - 600px) / 400)); */
-        font-size: 32px;
+        font-size: calc(18px + (5 * (100vw - 600px) / 400));
     }
 
     .performer_imageWrapper___idk2 {
@@ -554,14 +562,12 @@ section {
     }
 
     .performer_name {
-        /* font-size: calc(14px + (4 * (100vw - 600px) / 400)); */
-        font-size: 14px;
+        font-size: calc(13px + (2 * (100vw - 600px) / 400));
     }
 
     .performer_text,
     .performer_text_center {
-        /* font-size: calc(10px + (2 * (100vw - 600px) / 400)); */
-        font-size: 10px;
+        font-size: calc(10px + (2 * (100vw - 600px) / 400));
     }
 }
 
