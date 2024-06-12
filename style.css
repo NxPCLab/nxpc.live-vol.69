@@ -234,9 +234,16 @@ section {
     /* Added to position .youtube_live relative to this */
 }
 
+
 .hero_image__D3tIB {
     width: 80%;
     position: relative;
+}
+
+@media (max-width: 600px) {
+    .hero_image__D3tIB {
+        width: 100%;
+    }
 }
 
 @media(max-width: 600px) {
@@ -268,7 +275,7 @@ section {
     color: #fff;
     text-align: center;
     font-family: fantasy;
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,19 +297,12 @@ section {
     text-decoration: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 450px) {
     .youtube_live {
-        width: calc(100px + (150 * ((100vw - 375px) / 1125)));
-        height: calc(100px + (150 * ((100vw - 375px) / 1125)));
-        font-size: calc(20px + (25 * ((100vw - 375px) / 1125)));
+        width: calc(80px + (150 * ((100vw - 375px) / 1125)));
+        height: calc(80px + (150 * ((100vw - 375px) / 1125)));
+        font-size: calc(15px + (25 * ((100vw - 375px) / 1125)));
         right: calc(10px + (50 * ((100vw - 375px) / 225)));
-    }
-}
-
-@media (min-width: 500px) {
-    .youtube_live {
-        bottom: calc(570px - (50 * ((100vw - 500px) / 100)));
-        right: 14px;
     }
 }
 
