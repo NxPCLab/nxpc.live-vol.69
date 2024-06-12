@@ -261,19 +261,19 @@ section {
 }
 
 .youtube_live {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-color: red;
     border-radius: 50%;
     color: #fff;
     text-align: center;
     font-family: fantasy;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 550px;
+    bottom: 500px;
     right: 10px;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
