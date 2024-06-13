@@ -280,7 +280,6 @@ section {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 400px;
     right: 10px;
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
@@ -297,11 +296,19 @@ section {
     text-decoration: none;
 }
 
-@media (min-width: 450px) {
+@media (max-width: 499px) {
+    .youtube_live {
+        bottom: 375px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 500px) {
     .youtube_live {
         width: calc(80px + (150 * ((100vw - 375px) / 1125)));
         height: calc(80px + (150 * ((100vw - 375px) / 1125)));
         font-size: calc(15px + (25 * ((100vw - 375px) / 1125)));
+        bottom: 600px;
         right: calc(10px + (50 * ((100vw - 375px) / 225)));
     }
 }
