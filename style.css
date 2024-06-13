@@ -274,7 +274,8 @@ section {
     border-radius: 50%;
     color: #fff;
     text-align: center;
-    font-family: fantasy, Impact;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
     font-size: 12px;
     display: flex;
     align-items: center;
@@ -299,7 +300,6 @@ section {
 @media (max-width: 499px) {
     .youtube_live {
         bottom: 375px;
-        font-weight: 700;
     }
 }
 
